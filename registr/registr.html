@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="style-registr.css"> 
+</head>
+<body>
+    <div class="wrapper">
+            <form id="registrationForm">
+                <h1>Регистрация</h1>
+                <div class="inputBoxReg phone-container">
+                    
+                    <div class="phone-wrapper">
+                        <select id="country">
+                            <option value="+7" selected>+7 </option>
+                            <option value="+1">+1 </option>
+                            <option value="+380">+380</option>
+                            <option value="+44">+44</option>
+                            <option value="+49">+49</option>
+                        </select>
+                        <input type="text" id="phone" placeholder="123 456 7890">
+                    </div>
+                </div>
+                
+            <div class="inputBoxReg">
+                <input type="text" placeholder="Имя пользователя..." required>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="inputBoxReg">
+                <input type="password" placeholder="Пароль..." required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="inputBoxReg">
+                <input type="password" placeholder="Повторите пароль..." required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox"> Запомнить меня</label>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="script-registr.js"></script>
+</body>
+</html>
